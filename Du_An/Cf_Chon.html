@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>COFFEE SHOP</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,500&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="Media/Photo/logoTab.png" class="tab-icon">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="Media/Photo/logo.jpg" alt="">
+            </a>
+            <ul class="main-menu">
+                <li> <a href="index.html">Trang chủ</a> </li>
+                <li><a href="Cf_TrungNguyen.html">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="Cf_TrungNguyen.html">Coffee trung nguyên</a></li>
+                        <li><a href="Cf_DaLat.html">Đà lạt coffee</a></li>
+                        <li><a href="Cf_Mac.html">Mac Coffee</a></li>
+                        <li><a href="Cf_Chon.html">Cà phê chồn</a></li>
+                    </ul>
+                </li>
+                <li><a href="intro.html">Giới thiệu</a> </li>
+                <li><a href="LienHe.html">Liên hệ</a> </li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;" ></i></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="bannerSP">
+        <img src="Media/Photo/bannerSP.png" alt="">
+    </div>
+    <div class="body-container">
+        <div class="link">
+            <a href="index.html">Trang chủ</a> >
+            <a href="Cf_TrungNguyen.html">Sản phẩm</a> >
+            <a href="Cf_Chon.html">Cà phê chồn</a>
+        </div>
+        <div class="box-tile">
+            <h2>COFFEE Cà phê chồn</h2>
+            <P>(9 sản phẩm)</P>
+        </div>
+        <div class="main-container">
+            <div class="table">
+                <div class="filter-destop">
+                    <h3>Lọc sản phẩm</h3>
+                </div>
+                <!-- end filter-destop -->
+                <div class="filter-box">
+                    <h3>Danh mục</h3>
+                    <ul class="from-1">
+                        <li><a href="Cf_TrungNguyen.html">Coffee trung nguyên</a></li>
+                        <li><a href="Cf_DaLat.html">Đà lạt coffee</a></li>
+                        <li><a href="Cf_Mac.html">Mac Coffee</a></li>
+                        <li><a href="Cf_Chon.html">Cà phê chồn</a></li>
+                    </ul>
+                </div>
+                <!-- end filter-box -->
+                <div class="filter-box">
+                    <h3>Thương Hiệu</h3>
+                    <div class="search-box">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+
+                    </div>
+                    <li style="display: flex; align-items: center;">
+                        <input type="radio" id="fname" name="fname">
+                        <label for="fname" style="margin-left: 5px;">Khác</label>
+                    </li>
+                </div>
+                <div class="filter-box">
+                    <h3>Giá</h3>
+
+                    <ul>
+                        <li style="display: flex; align-items: center;">
+                            <input type="radio" id="fname" name="fname">
+                            <label for="fname" style="margin-left: 5px;">Nhỏ hơn 50,000đ</label>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <input type="radio" id="fname" name="fname">
+                            <label for="fname" style="margin-left: 5px;">Từ 50,000đ đến 200,000đ</label>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <input type="radio" id="fname" name="fname">
+                            <label for="fname" style="margin-left: 5px;">Từ 200,000đ đến 500,000đ</label>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <input type="radio" id="fname" name="fname">
+                            <label for="fname" style="margin-left: 5px;">Từ 500,000đ đến 1,000,000đ</label>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <input type="radio" id="fname" name="fname">
+                            <label for="fname" style="margin-left: 5px;">Trên 1,000,000đ</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-box">
+                    <h3>Nguồn gốc</h3>
+                    <div class="search-box">
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+
+                    </div>
+                    <li style="display: flex; align-items: center;">
+                        <input type="radio" id="fname" name="fname">
+                        <label for="fname" style="margin-left: 5px;">Nội địa</label>
+                    </li>
+                    <li style="display: flex; align-items: center;">
+                        <input type="radio" id="fname" name="fname">
+                        <label for="fname" style="margin-left: 5px;">Nhập khẩu</label>
+                    </li>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card-list">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/exclusive.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê sữa đá Highlands Coffee lon 235ml</h5>
+                            <p class="card-text">10.000đ</p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/davidoff.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Cà phê hòa tan Davidoff lọ 100g
+                    </h5>
+                    <p class="card-text">135.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/highla.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê rang xay Sành Điệu Highlands Coffee gói 200g</h5>
+                            <p class="card-text">254.000đ</p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+                <div class="card-list">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/drip.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê Drip - Culi Robusta hạt số 1 - 250gr</h5>
+                            <p class="card-text">39.000đ</p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                    
+                        <img class="card-img-top" src="Media/Photo/redcup.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cà phê hòa tan nguyên chất Red Cup Nescafé lọ 200g
+                            </h5>
+                            <p class="card-text">
+                                250.000đ
+                                .</p>
+                                <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/americano.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Trung Nguyên Legend Americano hộp 15 gói x 2g
+                            </h5>
+                            <p class="card-text">
+                                47.000đ
+                            </p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+                <div class="card-list">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/PhinGiay.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Cà phê phin giấy Trung Nguyên Legend Americano</h5>
+                            <p class="card-text">530.000đ</p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="Media/Photo/Blend.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cà phê House Blend - 500gr
+                            </h5>
+                            <p class="card-text">164.000đ</p>
+                            <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="Media/Photo/nescafe.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Cà phê hòa tan nguyên chất Nescafé
+                                </h5>
+                                <p class="card-text">
+                                    200.000đ
+                                </p>
+                                <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+                <div class="view-more">
+                    <button class="btn-load-more"> Xem thêm 3 sản phẩm</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>  
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+        
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+       
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Thông tin liên hệ</h4>
+                    <p>Địa chỉ: 70 Nguyễn Huệ, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                    <p>Điện thoại: 0787999999</p>
+                    <p>Email: coffeeshop75@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Giới thiệu</h4>
+                    <p>Coffee shop là nơi bạn có thể tìm thấy những thông tin về cà phê từ khắp nơi trên thế giới.
+                        Chúng
+                        tôi cung cấp cho bạn các công thức pha chế cà phê và chia sẻ những trải nghiệm đặc biệt của
+                        chúng tôi với cà phê.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Liên kết</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center">© 2023 Bản quyền thuộc về Coffee shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="Main.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>COFFEE SHOP</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,500&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="Media/Photo/logoTab.png" class="tab-icon">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="container">
+            <a href="" class="logo">
+                <img src="Media/Photo/logo.jpg" alt="">
+            </a>
+            <ul class="main-menu">
+                <li> <a href="index.html">Trang chủ</a> </li>
+                <li><a href="Cf_TrungNguyen.html">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="Cf_TrungNguyen.html">Coffee trung nguyên</a></li>
+                        <li><a href="Cf_DaLat.html">Đà lạt coffee</a></li>
+                        <li><a href="Cf_Mac.html">Mac Coffee</a></li>
+                        <li><a href="Cf_Chon.html">Cà phê chồn</a></li>
+                    </ul>
+                </li>
+                <li><a href="intro.html">Giới thiệu</a> </li>
+                <li><a href="LienHe.html">Liên hệ</a> </li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;"></i></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="banner">
+        <div class="banner-slider">
+            <img src="Media/Photo/slide_banner.jpg" class="slider-image active">
+            <img src="Media/Photo/slide_banner2.jpg" class="slider-image">
+            <img src="Media/Photo/slide_banner3.jpg" class="slider-image">
+        </div>
+    </div>
+    <div class="group-list">
+
+        <div class="title-list">
+            <h2>SẢN PHẨM MỚI</h2>
+        </div>
+        <div class="card-list">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/exclusive.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cà phê hòa tan cao cấp Exxlusive Decaf lọ 100g</h5>
+                    <p class="card-text">122.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/davidoff.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Cà phê hòa tan Davidoff lọ 100g
+                    </h5>
+                    <p class="card-text">135.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/nescafe.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Cà phê hòa tan nguyên chất Nescafé
+                    </h5>
+                    <p class="card-text">
+                        200.000đ
+                    </p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/redcup.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Cà phê hòa tan nguyên chất Red Cup Nescafé lọ 200g
+                    </h5>
+                    <p class="card-text">
+                        250.000đ
+                        .</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/passiiona.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cà phê Passiona G7 Trung Nguyên hộp 224g</h5>
+                    <p class="card-text">45.000đ.</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/highla.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cà phê rang xay Sành Điệu Highlands Coffee gói 200g</h5>
+                    <p class="card-text">254.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/thuanviet.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cà phê rang xay Thuần Việt gói 250g</h5>
+                    <p class="card-text">250.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="Media/Photo/exclusive.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cà phê sữa đá Highlands Coffee lon 235ml</h5>
+                    <p class="card-text">10.000đ</p>
+                    <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- end -->
+
+        </div>
+        <!-- card-list -->
+        <div class="group-list">
+
+            <div class="title-list">
+                <h2>SẢN PHẨM NỔI BẬT</h2>
+            </div>
+            <div class="card-list">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Media/Photo/exclusive.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cà phê hòa tan cao cấp Exxlusive Decaf lọ 100g</h5>
+                        <p class="card-text">122.000đ</p>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Media/Photo/davidoff.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Cà phê hòa tan Davidoff lọ 100g
+                        </h5>
+                        <p class="card-text">135.000đ</p>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Media/Photo/nescafe.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Cà phê hòa tan nguyên chất Nescafé
+                        </h5>
+                        <p class="card-text">
+                            200.000đ
+                        </p>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <!-- end -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Media/Photo/redcup.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Cà phê hòa tan nguyên chất Red Cup Nescafé lọ 200g
+                        </h5>
+                        <p class="card-text">
+                            250.000đ
+                            .</p>
+                        <button class="btn btn-primary add-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <!-- end -->
+
+            </div>
+            <!-- card-list -->
+        </div>
+        <!-- group-list-->
+    </div>
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Thông tin liên hệ</h4>
+                    <p>Địa chỉ: 70 Nguyễn Huệ, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                    <p>Điện thoại: 0787999999</p>
+                    <p>Email: coffeeshop75@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Giới thiệu</h4>
+                    <p>Coffee shop là nơi bạn có thể tìm thấy những thông tin về cà phê từ khắp nơi trên thế giới. Chúng
+                        tôi cung cấp cho bạn các công thức pha chế cà phê và chia sẻ những trải nghiệm đặc biệt của
+                        chúng tôi với cà phê.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Liên kết</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Dịch vụ</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center">© 2023 Bản quyền thuộc về Coffee shop</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // Initialize variables
+            var currentIndex = 0,
+                sliderImages = $('.slider-image'),
+                sliderImagesCount = sliderImages.length;
+
+            // Set the first image as active
+            sliderImages.eq(currentIndex).addClass('active');
+
+            // Define function to move to next slide
+            function nextSlide() {
+                currentIndex++;
+                if (currentIndex >= sliderImagesCount) {
+                    currentIndex = 0;
+                }
+                sliderImages.eq(currentIndex).addClass('active').siblings().removeClass('active');
+                sliderImages.eq(currentIndex).css('left', '100%').animate({ 'left': '0' });
+                sliderImages.eq((currentIndex + sliderImagesCount - 1) % sliderImagesCount).animate({ 'left': '-100%' });
+            }
+
+            // Set up interval to move to next slide every 4 seconds
+            setInterval(nextSlide, 4000);
+        });
+        // Để js giỏ hàng ở dưới đây
+        let cartIcon = document.querySelector("#cart-icon");
+        let cart = document.querySelector(".cart-1");
+        let closeCart = document.querySelector("#close-cart");
+
+
+        // Thay đổi tên class từ "add-cart" thành "buy-now"
+        var buyNowButtons = document.getElementsByClassName("buy-now");
+
+        // Lặp qua từng nút "Mua ngay"
+        for (var i = 0; i < buyNowButtons.length; i++) {
+            var button = buyNowButtons[i];
+            // Gán sự kiện click cho mỗi nút
+            button.addEventListener("click", addToCart);
+        }
+
+
+        cartIcon.onclick = () => {
+            cart.classList.toggle("active");
+        };
+
+        closeCart.onclick = () => {
+            cart.classList.remove("active");
+        };
+        if (document.readyState == "loading") {
+            document.addEventListener('DOMContentLoaded', ready);
+        } else {
+            ready();
+        }
+
+        function ready() {
+            var addCart = document.getElementsByClassName("add-cart");
+            for (var i = 0; i < addCart.length; i++) {
+                var button = addCart[i];
+                button.addEventListener("click", addCartClicked);
+            }
+
+            document
+                .getElementsByClassName("btn-buy")[0]
+                .addEventListener("click", buyButtonClicked);
+        }
+
+        function buyButtonClicked() {
+            alert('Đơn hàng của bạn đã được đặt');
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            while (cartContent.hasChildNodes()) {
+                cartContent.removeChild(cartContent.firstChild);
+            }
+            updatetotal();
+        }
+
+        function addCartClicked(event) {
+            var button = event.target;
+            var shopProduct = button.closest(".card");
+            var title = shopProduct.getElementsByClassName("card-title")[0].innerText;
+            var price = shopProduct.getElementsByClassName("card-text")[0].innerText;
+            var productImg = shopProduct.getElementsByClassName("card-img-top")[0].src;
+            addProductToCart(title, price, productImg);
+            updatetotal();
+        }
+
+        function addProductToCart(title, price, productImg) {
+            var cartShopBox = document.createElement("div");
+            cartShopBox.classList.add("cart-box");
+
+            var cartBoxContent = `
+        <img src="${productImg}" alt="" class="cart-img">
+        <div class="detail-box">
+            <div class="cart-product-title">${title}</div>
+            <div class="cart-price">${price}</div>
+            <input type="number" value="1" class="cart-quantity">
+        </div>
+        <i class='bx bxs-trash-alt cart-remove'></i>`;
+
+            cartShopBox.innerHTML = cartBoxContent;
+            var cartItems = document.getElementsByClassName("cart-content")[0];
+            cartItems.appendChild(cartShopBox);
+
+            cartShopBox
+                .getElementsByClassName("cart-remove")[0]
+                .addEventListener("click", removeCartItem);
+
+            cartShopBox
+                .getElementsByClassName("cart-quantity")[0]
+                .addEventListener("change", quantityChanged);
+        }
+
+        function removeCartItem(event) {
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.remove();
+            updatetotal();
+        }
+
+        function quantityChanged(event) {
+            var input = event.target;
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updatetotal();
+        }
+
+        function updatetotal() {
+            var cartContent = document.getElementsByClassName("cart-content")[0];
+            var cartBoxes = cartContent.getElementsByClassName("cart-box");
+            var total = 0;
+            for (var i = 0; i < cartBoxes.length; i++) {
+                var cartBox = cartBoxes[i];
+                var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+                var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+                var price = parseFloat(priceElement.innerText.replace(".", "").replace("đ", "")); // Lấy giá trị số từ chuỗi giá tiền
+                var quantity = parseInt(quantityElement.value);
+
+                total += price * quantity;
+            }
+            total = Math.round(total * 100) / 100;
+
+            // Định dạng số thành giá tiền Việt Nam đồng
+            var formatter = new Intl.NumberFormat("vi-VN", {
+                style: "currency",
+                currency: "VND"
+            });
+            var formattedTotal = formatter.format(total);
+
+            document.getElementsByClassName("total-price")[0].innerText = formattedTotal;
+        }
+    </script>
+
+</body>
+
+</html>

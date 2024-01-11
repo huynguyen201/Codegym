@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>COFFEE SHOP</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,500&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="Media/Photo/logoTab.png" class="tab-icon">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="container">
+            <a href="Home.html" class="logo">
+                <img src="Media/Photo/logo.jpg" alt="logo">
+            </a>
+            <ul class="main-menu">
+                <li> <a href="index.html">Trang chủ</a> </li>
+                <li><a href="Cf_TrungNguyen.html">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="Cf_TrungNguyen.html">Coffee trung nguyên</a></li>
+                        <li><a href="Cf_DaLat.html">Đà lạt coffee</a></li>
+                        <li><a href="Cf_Mac.html">Mac Coffee</a></li>
+                        <li><a href="Cf_Chon.html">Cà phê chồn</a></li>
+                    </ul>
+                </li>
+                <li><a href="intro.html">Giới thiệu</a> </li>
+                <li><a href="LienHe.html">Liên hệ</a> </li>
+                <li id="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: white;" ></i></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="introduce">
+        <div class="header-navigate">
+            <ul>
+                <li> <a href="index.html">Trang chủ</a> </li>
+                <li> <a href="intro.html"><i class="fa fa-angle-right"></i></a></li>
+                <li>Giới thiệu</li>
+            </ul>
+        </div>
+        <div class="row">
+            <h2>Giới thiệu</h2>
+            <p>Coffe shop là một điểm đến tuyệt vời cho những người yêu thích cà phê thơm ngon và không gian ấm cúng.
+                Với đồ uống được pha chế chuyên nghiệp và phong cách thiết kế đầy phóng khoáng, quán cà phê này sẽ là
+                nơi bạn muốn trở lại mỗi khi muốn thưởng thức một tách cà phê ngon.</p>
+            <div class="photo">
+                <img src="Media/Photo/cf-2.jpg" alt="Ảnh ly coffe" width="70%">
+                <figcaption>Coffe đen</figcaption>
+            </div>
+
+            <p> Tại quán cà phê, bạn có thể tìm thấy nhiều loại cà phê phong phú và đa dạng như espresso, cappuccino,
+                latte, americano và nhiều loại đồ uống khác nữa. Bên cạnh đó, quán còn cung cấp các loại bánh ngọt, bánh
+                mì và bánh sandwich thơm ngon để bạn có thể thưởng thức cùng với ly cà phê của mình.</p>
+
+            <p> Không gian của quán cũng được thiết kế với sự chú ý đến chi tiết, tạo ra một môi trường thoải mái và ấm
+                áp để khách hàng có thể thư giãn và tận hưởng thời gian của mình. Bạn có thể ngồi tại bàn và thưởng thức
+                cà phê cùng bạn bè hoặc tận hưởng không gian riêng tư với một quyển sách hay tạp chí yêu thích của mình.
+
+                Dưới đây là hình ảnh của quán cà phê để bạn có thể hình dung thêm về không gian của quán:</p>
+        </div>
+    </div>
+
+    <div class="cart-1">
+        <h2 class="cart-title ">Thông tin nhận hàng</h2>
+        <div class="group">
+            <input type="text" name="contact[name]" class="form-control" placeholder="Tên người nhân"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[email]" class="form-control" placeholder="Địa chỉ nhận"
+                aria-describedby="basic-addon1" style="width: 300px;">
+            <input type="text" name="contact[phone]" class="form-control" placeholder="Số điện thoại"
+                aria-describedby="basic-addon1" style="width: 300px;">
+        </div>  
+        <h2 class="cart-title thong-tin">Giỏ Hàng</h2>
+        <div class="cart-content">
+            <!-- Nội dung giỏ hàng -->
+        </div>
+        
+        <div class="total">
+            <div class="total-title">Giá</div>
+            <div class="total-price">$0</div>
+        </div>
+       
+        <button type="button" class="btn-buy">Mua Ngay</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+   <!-- Footer -->
+   <footer class="bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Thông tin liên hệ</h4>
+                <p>Địa chỉ: 70 Nguyễn Huệ, Vĩnh Ninh, Thành phố Huế, Thừa Thiên Huế</p>
+                <p>Điện thoại: 0787999999</p>
+                <p>Email: coffeeshop75@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Giới thiệu</h4>
+                <p>Coffee shop là nơi bạn có thể tìm thấy những thông tin về cà phê từ khắp nơi trên thế giới. Chúng
+                    tôi cung cấp cho bạn các công thức pha chế cà phê và chia sẻ những trải nghiệm đặc biệt của
+                    chúng tôi với cà phê.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Liên kết</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <p class="text-center">© 2023 Bản quyền thuộc về Coffee shop</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="Main.js"></script>
+</body>
+
+</html>
