@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dddfdd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            text-align: left;
+        }
+
+        h1 {
+            margin-top: -50px;
+        }
+
+        .input-container {
+            grid-column: span 2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            grid-column: span 2;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <h1>Đăng Nhập</h1>
+        <form id="loginForm" class="form-container">
+            <div class="input-container">
+                <label for="username">Tên người dùng:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="button-container">
+                <button type="submit">Đăng Nhập</button>
+                <p>Chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Lấy thông tin đăng ký từ Local Storage
+            var registeredUser = JSON.parse(localStorage.getItem('user'));
+
+            if (registeredUser && username === registeredUser.username && password === registeredUser.password) {
+                alert('Đăng nhập thành công.');
+                window.location.href = 'index.html';
+            } else {
+                alert('Tên người dùng hoặc mật khẩu không chính xác. Vui lòng kiểm tra lại.');
+            }
+        });
+
+        // Kiểm tra xem đã có tài khoản đăng ký trong Local Storage
+        var registeredUser = JSON.parse(localStorage.getItem('user'));
+        if (registeredUser) {
+            document.getElementById('username').value = registeredUser.username;
+        }
+    </script>
+</body>
+</html>

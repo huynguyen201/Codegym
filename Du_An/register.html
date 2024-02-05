@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng Ký</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(227, 227, 236);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            text-align: left;
+        }
+
+        h1 {
+            margin-top: -50px;
+
+        }
+
+        .input-container {
+            grid-column: span 4;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            grid-column: span 2;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="authentication">
+            <h1>Đăng Ký</h1>
+            <form id="registerForm" class="form-container">
+                <div class="input-container">
+                    <label for="newUsername">Tên người dùng:</label>
+                    <input type="text" id="newUsername" required>
+                </div>
+                <div class="input-container">
+                    <label for="newPassword">Mật khẩu:</label>
+                    <input type="password" id="newPassword" required>
+                </div>
+                <div class="input-container">
+                    <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Đăng Ký</button>
+                    <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+ 
+    <script>
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        
+        var newUsername = document.getElementById('newUsername').value;
+        var newPassword = document.getElementById('newPassword').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+    
+        if (newPassword !== confirmPassword) {
+            alert('Mật khẩu xác nhận không khớp. Vui lòng kiểm tra lại.');
+        } else {
+            // Lưu thông tin người dùng vào một đối tượng người dùng ở phía máy khách
+            var user = {
+                username: newUsername,
+                password: newPassword
+            };
+    
+            // Lưu đối tượng người dùng vào Local Storage hoặc Cookie
+            // Điều này chỉ để mô phỏng và không nên sử dụng cho mục đích thực tế
+            // Bạn nên sử dụng máy chủ để xử lý và lưu trữ thông tin người dùng
+            localStorage.setItem('user', JSON.stringify(user));
+    
+            alert('Đăng ký thành công. Bạn có thể đăng nhập ngay bây giờ.');
+            window.location.href = 'login.html';
+        }
+    });
+</script>    
+    
+</body>
+</html>
